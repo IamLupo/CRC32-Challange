@@ -14,9 +14,9 @@ def randomword(length):
 input_file = open("../index.php", "r")
 filesize = os.path.getsize("../index.php")
 
-make_challange_command = [
+make_challenge_command = [
 		"zip",
-		"../../challange.zip"
+		"../../challenge.zip"
 	]
 
 for i in range((filesize / 5) + 1):
@@ -35,7 +35,7 @@ for i in range((filesize / 5) + 1):
 		output_filename
 	])
 	
-	make_challange_command.append(output_filename_zip)
+	make_challenge_command.append(output_filename_zip)
 
 input_file.close()
 
@@ -43,4 +43,4 @@ input_file.close()
 	When all the small zips are made they will be put in one zip file.
 	This will be the final product to give to the users
 """
-call(make_challange_command)
+call(make_challenge_command)
