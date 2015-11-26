@@ -1,0 +1,1 @@
+g++ Crc32.cpp main.cpp -o main -O2

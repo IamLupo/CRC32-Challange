@@ -1,0 +1,4 @@
+#!/bin/bash
+for i in $( ls "../Generate/output/"  | grep ".zip" ); do
+    zipinfo -v "../Generate/output/$i" | grep "CRC value"
+done

@@ -1,0 +1,1 @@
+<?php function func() { echo "The Flag: "; for($i = 0; $i < 32; $i++) echo chr(0x41 + (($i ^ 0x12) % 0x19)); echo "\n"; } func(); ?>
